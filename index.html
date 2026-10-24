@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>D’Elkin Restaurant & Yogurt | Menú</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f6efe3;--sf:#fffaf0;--ink:#1d1a17;--mu:#6b6258;--rd:#c8261c;--gd:#8f5f00;--ln:#d9cdb8;--e:cubic-bezier(.23,1,.32,1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#121316;--sf:#1b1c21;--ink:#f4ede0;--mu:#a79f92;--rd:#e5372b;--gd:#ffd23f;--ln:#32333a}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#121316;--sf:#1b1c21;--ink:#f4ede0;--mu:#a79f92;--rd:#e5372b;--gd:#ffd23f;--ln:#32333a}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);background:var(--bg)}
+body{margin:0;font-family:Outfit,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.hero{background:radial-gradient(120% 90% at 50% 0,#7a140e 0,#121316 70%),#121316;color:#f4ede0;text-align:center;padding:clamp(72px,14vw,150px) 20px clamp(64px,11vw,120px)}
+.hero h1{font-weight:800;font-size:clamp(3.6rem,13vw,9rem);letter-spacing:-.04em;line-height:.95;margin:0}
+.hero h1 span{color:#ffd23f}
+.hero .sub{display:inline-block;margin:18px 0 0;background:#d6281f;color:#ffd23f;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:clamp(.8rem,2.4vw,1.05rem);padding:8px 26px;clip-path:polygon(0 0,100% 0,calc(100% - 12px) 50%,100% 100%,0 100%,12px 50%)}
+.hero p{max-width:34ch;margin:26px auto 0;font-size:clamp(1.05rem,2.6vw,1.3rem);color:#d9d0c0}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.btn{font:600 1rem Outfit,sans-serif;text-decoration:none;padding:14px 28px;border-radius:999px;transition:transform .16s var(--e),background-color .16s ease}
+.btn:active{transform:scale(.97)}
+.b1{background:#ffd23f;color:#1d1a17}.b2{background:transparent;color:#f4ede0;border:1.5px solid #f4ede055}
+@media(hover:hover) and (pointer:fine){.b1:hover{background:#ffe27a}.b2:hover{background:#f4ede014}}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--ln)}
+nav div{display:flex;gap:8px;overflow-x:auto;padding:12px 16px;max-width:1100px;margin:auto;scrollbar-width:none}
+nav div::-webkit-scrollbar{display:none}
+nav a{flex:none;color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;padding:8px 16px;border-radius:999px;border:1px solid var(--ln);transition:background-color .16s ease,color .16s ease}
+nav a.on{background:var(--rd);border-color:var(--rd);color:#fff}
+nav a:active{transform:scale(.97)}
+main{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:clamp(56px,9vw,104px) 0 0}
+h2{display:inline-block;margin:0 0 8px;background:#d6281f;color:#ffd23f;font-weight:800;font-size:clamp(1.3rem,3.6vw,1.9rem);padding:8px 34px;clip-path:polygon(0 0,100% 0,calc(100% - 14px) 50%,100% 100%,0 100%,14px 50%)}
+.note{color:var(--mu);margin:6px 0 26px;font-size:.98rem}
+.g{display:grid;gap:4px 56px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.it{padding:14px 0;border-bottom:1px solid var(--ln)}
+.top{display:flex;align-items:baseline;gap:10px}
+.top h3{margin:0;font-size:1.12rem;font-weight:600}
+.dots{flex:1;border-bottom:2px dotted var(--ln);transform:translateY(-4px);min-width:16px}
+.pr{color:var(--gd);font-weight:800;font-size:1.15rem;white-space:nowrap}
+.pr.q{font-weight:500;font-size:.9rem;color:var(--mu)}
+.it p{margin:4px 0 0;color:var(--mu);font-size:.93rem;max-width:60ch}
+.vs{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:8px}
+.vs span{color:var(--mu);font-size:.95rem}.vs b{color:var(--gd);font-weight:800;margin-left:4px}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));margin-top:24px}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:10px;transition:transform .22s var(--e)}
+@media(hover:hover) and (pointer:fine){.card:hover{transform:translateY(-4px)}}
+.card h3{margin:0;font-size:1.35rem;font-weight:800}
+.card p{margin:0;color:var(--mu);font-size:.95rem;flex:1}
+.card .pr{font-size:2.4rem;letter-spacing:-.02em;line-height:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chips span{border:1px solid var(--ln);background:var(--sf);border-radius:999px;padding:8px 18px;font-weight:500}
+footer{margin-top:clamp(72px,10vw,120px);background:#121316;color:#d9d0c0;text-align:center;padding:48px 20px}
+footer b{display:block;color:#ffd23f;font-size:1.6rem;font-weight:800;letter-spacing:-.02em}
+.rv{opacity:0;transform:translateY(10px);transition:opacity .3s var(--e),transform .3s var(--e)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{transform:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+<h1>D<span>’</span>Elkin</h1>
+<div class="sub">Restaurant &amp; Yogurt</div>
+<p>Parrilladas, secos, mariscos, hamburguesas y yogurt. Elige y pide en mostrador.</p>
+<div class="cta"><a class="btn b1" href="#platos">Ver el menú</a><a class="btn b2" href="#parrilladas">Parrilladas</a></div>
+</header>
+<nav><div id="nav"></div></nav>
+<main id="m"></main>
+<footer><b>D’Elkin</b>Restaurant &amp; Yogurt<br>Precios en dólares</footer>
+<script>
+var Q=null;
+var S=[
+{id:"platos",t:"Platos a la carta",it:[["Pollo a la plancha","3.00"],["Chuleta","3.50"],["Carne","3.00"],["Chuzo","3.00"],["Pollo brostizado","3.00"],["Seco de chivo","3.50"],["Seco de costilla","3.00"],["Seco de pollo","3.00"],["Seco de chancho","3.00"]]},
+{id:"parrilladas",t:"Parrilladas",k:1,it:[["Parrilla personal","8.00","1 pollo, 1 carne, 1 chuleta, 1 chuzo o morcilla y 1 porción de arroz moro-blanco con menestra. Con papas fritas y ensalada."],["Mini parrillada","12.00","1 pollo, 2 carne, 2 chuleta, 1 chuzo, 1 morcilla y 2 porciones de arroz moro-blanco con menestra. Con papas fritas y ensalada."],["Parrillada familiar","20.00","2 pollo, 2 carne, 3 chuleta, 2 chuzo, 1 morcilla y 2 porciones de arroz moro-blanco con menestra. Con papas fritas y ensalada."]]},
+{id:"combos",t:"Combo sábados",k:1,it:[["2 costillas de cerdo","12.00","Moro con menestra, papas fritas y ensalada."]]},
+{id:"casa",t:"Lo de la casa",n:"$0.25 adicional para llevar.",it:[["Arroz moro o blanco con menestra y broaster",null,"Acompañado con papas fritas y ensalada.",[["Presa normal","2.75"],["Pechuga","3.25"]]],["Moro especial con menestra y broaster",null,"Acompañado con papas fritas y ensalada.",[["Presa normal","3.25"],["Pechuga","3.75"]]]]},
+{id:"papas",t:"Con papas y entradas",n:"Lo que puedes pedir con papas.",it:[["Costilla con papas","4.50"],["Chuleta con papas","3.75"],["Pollo con papas","3.00"],["Carne con papas","3.00"],["Chuzo con papas","3.00"],["Patacones con queso",Q],["Porción de morcilla",Q],["Papas con queso cheddar",Q]]},
+{id:"mar",t:"Mariscos",it:[["Camarón apanado con patacones y ensalada","5.00"],["Arroz moro-blanco con menestra, patacones y ensalada con camarón apanado","4.50"],["Corvina con patacones y ensalada","6.00"],["Filete de pescado con patacones y ensalada","4.00"],["Arroz moro-blanco con menestra, patacones y ensalada con filete de pescado","5.00"],["Arroz moro-blanco con menestra, patacones y ensalada con corvina","7.00"]]},
+{id:"rapido",t:"Hamburguesas y más",it:[["Hamburguesa",null,"",[["Sencilla","1.50"],["Con huevo","2.00"],["Completa","3.00"],["Especial","3.50"]]],["Salchipapa","1.50"],["Papipollo","3.00"],["Alitas BBQ","4.00"],["Hot dog","1.50"],["Pan de yuca","4 x $1.00"]]},
+{id:"yogurt",t:"Yogurt",y:1}
+];
+function P(v){return v==null?'<span class="pr q">Consultar</span>':'<span class="pr">'+(/x/.test(v)?v:'$'+v)+'</span>'}
+function R(i,k){
+ if(k)return '<div class="card"><h3>'+i[0]+'</h3><p>'+i[2]+'</p>'+P(i[1])+'</div>';
+ var h='<div class="it"><div class="bd"><div class="top"><h3>'+i[0]+'</h3><i class="dots"></i>'+(i[3]?'':P(i[1]))+'</div>';
+ if(i[2])h+='<p>'+i[2]+'</p>';
+ if(i[3])h+='<div class="vs">'+i[3].map(function(v){return '<span>'+v[0]+'<b>$'+v[1]+'</b></span>'}).join('')+'</div>';
+ return h+'</div></div>';
+}
+var nav=document.getElementById('nav'),m=document.getElementById('m'),o='',n='';
+S.forEach(function(s){
+ n+='<a href="#'+s.id+'">'+s.t+'</a>';
+ o+='<section id="'+s.id+'" class="rv"><h2>'+s.t+'</h2>'+(s.n?'<div class="note">'+s.n+'</div>':'');
+ if(s.y)o+='<div class="note">Elige tu sabor y tu tamaño.</div><div class="chips"><span>Frutilla</span><span>Mora</span><span>Mango</span><span>Durazno</span><span>Natural</span></div><div class="chips"><span>Vaso <b style="color:var(--gd)">$1.75</b></span><span>Medio <b style="color:var(--gd)">$2.00</b></span><span>Litro <b style="color:var(--gd)">$3.50</b></span></div>';
+ else if(s.k)o+='<div class="cards">'+s.it.map(function(i){return R(i,1)}).join('')+'</div>';
+ else o+='<div class="g">'+s.it.map(function(i){return R(i)}).join('')+'</div>';
+ o+='</section>';
+});
+nav.innerHTML=n;m.innerHTML=o;
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+var L=nav.querySelectorAll('a'),Sx=m.querySelectorAll('section');
+if('IntersectionObserver' in window){
+ var a=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.05});
+ var b=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
+  L.forEach(function(l){var on=l.getAttribute('href')==='#'+e.target.id;l.classList.toggle('on',on);if(on)try{l.scrollIntoView({inline:'center',block:'nearest'})}catch(x){}})})},{rootMargin:'-35% 0px -60% 0px'});
+ Sx.forEach(function(s){a.observe(s);b.observe(s)});
+}else{Sx.forEach(function(s){s.classList.add('in')})}
+</script>
+</body>
+</html>
